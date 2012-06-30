@@ -14,7 +14,7 @@ NEWSPIDER_MODULE = 'isbullshit.spiders'
 USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
 
 ITEM_PIPELINES = [
-    'isbullshit.pipelines.MongoDBPipeline',
+    'isbullshit.pipelines.MongoDBStorage',
 ]
 
 MONGODB_SERVER = "localhost"

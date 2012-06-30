@@ -4,7 +4,7 @@ from scrapy.exceptions import DropItem
 from scrapy.conf import settings
 from scrapy import log
 
-class MongoDBPipeline(object):
+class MongoDBStorage(object):
     def __init__(self):
         """ Initiate a MongoDB connection, a create the settings['MONGODB_COLLECTION'] collection. """
         connection = pymongo.Connection(settings['MONGODB_SERVER'], settings['MONGODB_PORT'])
