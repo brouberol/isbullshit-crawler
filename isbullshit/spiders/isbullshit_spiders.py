@@ -36,5 +36,6 @@ class IsBullshitSpider(CrawlSpider):
         item['url'] = urlparse.urljoin(urls[1], urls[2])
         # Extract article text, with html tags
         item['article_html'] = hxs.select("//div[@role='main']/article").extract()[0]
+        
         return item
 
