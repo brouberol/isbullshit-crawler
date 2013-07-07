@@ -18,9 +18,9 @@ class MongoDBStorage(object):
         """
         # Validate article
         if not item['article_html']:
-            raise DropItem("Missing article text of article from %" %item['url'])
+            raise DropItem("Missing article text of article from %s" %item['url'])
         elif not item['title']:
-            raise DropItem("Missing title of object from %" %item['url'])
+            raise DropItem("Missing title of object from %s" %item['url'])
         else:
 
             # If valid article, insert it in MongoDB collection
